@@ -2,6 +2,8 @@
 
 Supporting evidence for [HEST #143](https://github.com/mahmoodlab/HEST/issues/143). This folder lives on a fork-only evidence branch; the upstream fix consists of the pooling change and its regression test, not this dataset-specific validation bundle.
 
+Upstream pull request: [Fix count loss when pooling Visium HD bins #145](https://github.com/mahmoodlab/HEST/pull/145).
+
 - [Runnable validation script](validate_real_data.py)
 - [Machine-readable results and input checksums](results.json)
 - [Fix and regression test](https://github.com/psgundla/HEST/commit/bba8421b74c43a490a89a1ecbb3c7fd777406fa0)
