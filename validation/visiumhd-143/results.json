@@ -1,0 +1,138 @@
+{
+  "scope": "Full filtered 16um matrix, all genes; fixed function imported through HEST, original AST-isolated; no WSI pipeline",
+  "default_chunk_limit": "50000-row real-data run omitted for RAM safety; covered by synthetic regressions",
+  "baseline_commit": "3ddb5eaf5bd2a8133e0c0e8015816489a3d99dc3",
+  "python_version": "3.11.16",
+  "platform": "darwin",
+  "source_sha256": {
+    "original": "36db090a33c252b295a0537f8e3872ca7d9bc2d1def0bf0ce9796f20e5051d43",
+    "fixed": "c731d8a50715e243897e89867de81ee2dfdb0eb6272042a792c8777409c0019f"
+  },
+  "files": {
+    "filtered_feature_bc_matrix.h5": {
+      "bytes": 227804941,
+      "sha256": "765d09c861bae922bc5285b4f1cf82b9b302379e7c21aa07af55f8f07ba4c7f9"
+    },
+    "spatial/tissue_positions.parquet": {
+      "bytes": 3324698,
+      "sha256": "7998fe3e90b80b66ec2b0a06f04d1e8be1cfd25c4998b6a7dff268be25c01998"
+    },
+    "spatial/scalefactors_json.json": {
+      "bytes": 298,
+      "sha256": "9b6fd1f3a11b5a97767e0de12ae1361fe5a4e7fee76faeb4065a2bfc828dea04"
+    }
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "anndata": "0.12.19",
+    "scanpy": "1.11.5",
+    "h5py": "3.16.0",
+    "pyarrow": "25.0.1"
+  },
+  "input": {
+    "bins": 137051,
+    "genes": 18085,
+    "nonzero_entries": 174718343,
+    "umis": 266691885,
+    "microns_per_pixel": 0.27389195078106876,
+    "all_barcodes_matched": true,
+    "matrix_sha256": "e28cc06a85649d00ccb37715ee3356de5914cbabb0b242e76994421f6a4fbafa"
+  },
+  "oracle": {
+    "nonempty_128um_bins": 2281,
+    "umis": 266691885,
+    "max_bin_gene_count": 62502
+  },
+  "vendor_metrics": {
+    "file": "Visium_HD_Human_Colon_Cancer_metrics_summary.csv",
+    "sha256": "faf8711fe232d20622cb51955b4c10a5ca9428939a3a21a5422471f6d04ec169",
+    "bins": 137051,
+    "implied_total_umis": 266691885.0000015,
+    "rounding_difference_umis": 1.4901161193847656e-06
+  },
+  "runs": [
+    {
+      "version": "original",
+      "chunk_len": 1024,
+      "row_order": "source",
+      "output_bins": 2281,
+      "output_umis": 213383291,
+      "lost_umis": 53308594,
+      "loss_percent": 19.98883243110303,
+      "missing_output_bins": 0,
+      "mismatched_bin_gene_entries": 13675539,
+      "max_absolute_count_error": 14850,
+      "genes_with_changed_totals": 18047,
+      "seconds": 1.112,
+      "output_matrix_sha256": "3ed931b8f4c2b9345b9a4075a06a05ecc881bae555f652111f8864451ce4324e",
+      "process_peak_rss_bytes": 4142104576
+    },
+    {
+      "version": "fixed",
+      "chunk_len": 1024,
+      "row_order": "source",
+      "output_bins": 2281,
+      "output_umis": 266691885,
+      "lost_umis": 0,
+      "loss_percent": 0.0,
+      "missing_output_bins": 0,
+      "mismatched_bin_gene_entries": 0,
+      "max_absolute_count_error": 0,
+      "genes_with_changed_totals": 0,
+      "seconds": 11.513,
+      "output_matrix_sha256": "c0f0e5857e20dbf902a6018a6c10f5f41f5a6b4e24359febca044dc6d86226e0",
+      "process_peak_rss_bytes": 4142104576
+    },
+    {
+      "version": "original",
+      "chunk_len": 4096,
+      "row_order": "source",
+      "output_bins": 2281,
+      "output_umis": 121371935,
+      "lost_umis": 145319950,
+      "loss_percent": 54.48982821505799,
+      "missing_output_bins": 0,
+      "mismatched_bin_gene_entries": 19403587,
+      "max_absolute_count_error": 35313,
+      "genes_with_changed_totals": 18064,
+      "seconds": 1.394,
+      "output_matrix_sha256": "2026ccbd5f89055129321a281eb9ef012b1f184f621d827b7c79f3c16087fb01",
+      "process_peak_rss_bytes": 4142104576
+    },
+    {
+      "version": "fixed",
+      "chunk_len": 4096,
+      "row_order": "source",
+      "output_bins": 2281,
+      "output_umis": 266691885,
+      "lost_umis": 0,
+      "loss_percent": 0.0,
+      "missing_output_bins": 0,
+      "mismatched_bin_gene_entries": 0,
+      "max_absolute_count_error": 0,
+      "genes_with_changed_totals": 0,
+      "seconds": 11.619,
+      "output_matrix_sha256": "c0f0e5857e20dbf902a6018a6c10f5f41f5a6b4e24359febca044dc6d86226e0",
+      "process_peak_rss_bytes": 4142104576
+    },
+    {
+      "version": "fixed",
+      "chunk_len": 1024,
+      "row_order": "reversed",
+      "output_bins": 2281,
+      "output_umis": 266691885,
+      "lost_umis": 0,
+      "loss_percent": 0.0,
+      "missing_output_bins": 0,
+      "mismatched_bin_gene_entries": 0,
+      "max_absolute_count_error": 0,
+      "genes_with_changed_totals": 0,
+      "seconds": 11.952,
+      "output_matrix_sha256": "c0f0e5857e20dbf902a6018a6c10f5f41f5a6b4e24359febca044dc6d86226e0",
+      "process_peak_rss_bytes": 4142104576
+    }
+  ],
+  "status": "PASS: baseline loss reproduced; fixed counts match integer oracle exactly"
+}
